@@ -1,0 +1,45 @@
+ul {
+  list-style: none;  /* 中点を消す */
+}
+
+li {
+  float: left;  /* リストを横並びにする */
+  padding: 0 10px 0 10px;  /* リストの間のマージン */
+  /* リストの両端に線を設定 */
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+}
+
+/* 隣接するリストだけ線を設定 */
+li + li {
+  border-left: 0;
+  border-right: 1px solid #CCC;
+}
+
+/* float解除の為に空の要素を用意しクリアする */
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; 
+}
+
+.icon_size {
+  width: 160px;
+  height: 160px;
+}
+
+.title {
+  font-size: 16px;
+  /* 3点リーダにする */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 14px;
+  /* 3点リーダにする */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

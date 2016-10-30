@@ -1,0 +1,42 @@
+ul {
+  list-style: none;  /* 中点を消す */
+}
+
+li {
+  padding: 10px 5px;
+}
+
+/* 隣接するリストだけ線を設定 */
+li + li {
+  border-top: 1px solid #CCC;
+}
+
+.content {
+  overflow: auto;  /* 子要素にfloatを使っているので高さを取れるように指定 */
+}
+
+.icon_size {
+  width: 80px;
+  height: 80px;
+}
+
+.icon {
+  float: left;  /* 左詰めにし後続を右に回り込ませる */
+  margin-right: 10px;  /* テキストとのマージン */
+}
+
+.title {
+  font-size: 16px;
+  /* 3点リーダにする */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 14px;
+  /* 3点リーダにする */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
