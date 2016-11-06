@@ -7,4 +7,8 @@ HTML、CSS、JSのサンプル
 
 # landscape.html
 
-リストえ横並び
+リストで横並び
+
+# 2x4.html
+
+リストを2行4列に並べる

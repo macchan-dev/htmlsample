@@ -1,0 +1,50 @@
+ul {
+  list-style: none;  /* 中点を消す */
+}
+
+li {
+  float: left;  /* リストを横並びにする */
+  padding: 0 10px 0 10px;  /* リストの間のマージン */
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+}
+
+/* 隣接するリストだけ線を設定 */
+li + li {
+  border-left: 0;
+  border-right: 1px solid #CCC;
+}
+
+/* リストを4個ずつにする */
+li:nth-child(4n+1) {
+  border-left: 1px solid #CCC; /* リストは隣接しているが回り込み解除して左側にラインがなくなるので設定する */
+  clear: both; /* 回り込み解除 */
+}
+
+/* float解除の為に空の要素を用意しクリアする */
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; 
+}
+
+.icon_size {
+  width: 160px;
+  height: 160px;
+}
+
+.title {
+  font-size: 16px;
+  /* 3点リーダにする */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 14px;
+  /* 3点リーダにする */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
